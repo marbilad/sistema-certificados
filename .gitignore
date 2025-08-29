@@ -1,0 +1,18 @@
+# Ambiente virtual
+venv/
+env/
+BEcertific/
+__pycache__/
+*.pyc
+
+# Banco de dados
+db.sqlite3
+*.sqlite3
+
+# Arquivos de mídia gerados
+media/pdfs/
+media/qrcodes/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificado - {{ cert.nome }}</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
+        .valid { color: green; }
+        img { margin: 20px auto; }
+        a { color: #1a73e8; }
+    </style>
+</head>
+<body>
+    <h1>✅ Certificado Válido</h1>
+    <h2>{{ cert.nome }}</h2>
+    <p><strong>Empresa:</strong> {{ cert.empresa }}</p>
+    <p><strong>Curso:</strong> {{ cert.curso }}</p>
+    <p><strong>Emissão:</strong> {{ cert.data_emissao }}</p>
+    <p><strong>Status:</strong> <span class="valid">{{ cert.status }}</span></p>
+
+    <img src="/media/qrcodes/{{ cert.id }}.png" alt="QR Code" width="150">
+
+    <p><a href="/download/{{ cert.id }}/">⬇️ Baixar Certificado em PDF</a></p>
+</body>
+</html>

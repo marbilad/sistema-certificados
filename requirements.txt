@@ -1,0 +1,4 @@
+Django==4.2.16
+fpdf2==2.7.4
+qrcode[pil]==7.4.2
+Pillow==10.0.1
